@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocal Harmony Studio | Voice Teacher</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* Custom font integration */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .font-playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Simple animation for hero text */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* Simple animation for button */
+         @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in-down { animation: fadeInDown 1s ease-out forwards; }
+        .fade-in-up { animation: fadeInUp 1s 0.5s ease-out forwards; }
+        
+        /* Add a subtle gradient background */
+        .hero-gradient {
+            background: linear-gradient(135deg, #f5f3ff 0%, #faf5ff 100%);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-700">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 bg-white/80 backdrop-blur-lg z-50 shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <a href="#home" class="text-2xl font-bold text-purple-800 font-playfair">Vocal Harmony</a>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="#home" class="text-gray-600 hover:text-purple-600 transition duration-300">Home</a>
+                    <a href="#story" class="text-gray-600 hover:text-purple-600 transition duration-300">My Story</a>
+                    <a href="#blog" class="text-gray-600 hover:text-purple-600 transition duration-300">Blog</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-purple-600 transition duration-300">Testimonials</a>
+                    <a href="#contact" class="text-gray-600 hover:text-purple-600 transition duration-300">Contact Us</a>
+                    <a href="#login" class="ml-4 bg-purple-100 text-purple-700 hover:bg-purple-200 text-sm font-semibold py-2 px-5 rounded-full transition duration-300">Login</a>
+                </nav>
+                
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="md:hidden focus:outline-none">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <a href="#home" class="block text-gray-600 hover:bg-purple-50 py-3 px-4">Home</a>
+            <a href="#story" class="block text-gray-600 hover:bg-purple-50 py-3 px-4">My Story</a>
+            <a href="#blog" class="block text-gray-600 hover:bg-purple-50 py-3 px-4">Blog</a>
+            <a href="#testimonials" class="block text-gray-600 hover:bg-purple-50 py-3 px-4">Testimonials</a>
+            <a href="#contact" class="block text-gray-600 hover:bg-purple-50 py-3 px-4">Contact Us</a>
+            <a href="#login" class="block text-purple-700 font-semibold hover:bg-purple-50 py-3 px-4">Login</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main id="home" class="min-h-screen flex items-center hero-gradient pt-16 pb-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl md:text-7xl font-playfair font-bold text-gray-800 leading-tight fade-in-down">
+                Think You Can Sing?
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 mt-6 max-w-2xl mx-auto fade-in-down" style="animation-delay: 0.2s;">Unlock your true vocal potential. Our personalized coaching helps you find your unique voice and sing with confidence.</p>
+            <a href="#contact" class="inline-block mt-10 bg-purple-600 text-white font-bold text-lg px-10 py-4 rounded-full shadow-lg hover:bg-purple-700 transform hover:scale-105 transition-all duration-300 ease-in-out fade-in-up">
+                Book Our Voice Coach
+            </a>
+        </div>
+    </main>
+    
+    <!-- My Story Section -->
+    <section id="story" class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left">
+                    <h2 class="text-4xl font-playfair font-bold text-gray-800">I'm Mirian, and This is My Story</h2>
+                    <p class="mt-6 text-lg text-gray-600">I got into music because of the beauty that I express through my students. While I bring out the musical talent in them, each student teaches me something about myself.</p>
+                    <p class="mt-4 text-gray-600">I have the privilege of learning about music from my students each time, creating something new and learning something new about myself. It's a journey of shared discovery, and I'm honored to be a part of it.</p>
+                </div>
+                <div>
+                    <img src="https://placehold.co/600x700/E9D5FF/3730A3?text=Mirian" alt="Mirian, the Voice Coach" class="rounded-lg shadow-2xl w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-purple-50/60">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-playfair font-bold text-gray-800">What My Students Say</h2>
+                <p class="mt-3 text-lg text-gray-600">Real stories from singers who found their voice.</p>
+            </div>
+            <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-12">
+                <!-- Testimonial Card 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/120x120/E9D5FF/3730A3?text=NS" alt="AI generated photo of Nantale S." class="w-28 h-28 rounded-full mx-auto -mt-20 border-4 border-white shadow-lg">
+                    <p class="text-gray-600 italic mt-6">"I never thought I could sing in front of anyone. After just a few months, I had the confidence to perform at my sister's wedding. It was a dream come true!"</p>
+                    <p class="mt-4 font-bold text-purple-800 text-lg">- Nantale S.</p>
+                </div>
+                <!-- Testimonial Card 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/120x120/DDD6FE/3730A3?text=OM" alt="AI generated photo of Okello M." class="w-28 h-28 rounded-full mx-auto -mt-20 border-4 border-white shadow-lg">
+                    <p class="text-gray-600 italic mt-6">"The techniques I learned here completely transformed my range and control. The lessons are fun, engaging, and incredibly effective. Highly recommended!"</p>
+                    <p class="mt-4 font-bold text-purple-800 text-lg">- Okello M.</p>
+                </div>
+                <!-- Testimonial Card 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/120x120/C4B5FD/3730A3?text=AE" alt="AI generated photo of Achen E." class="w-28 h-28 rounded-full mx-auto -mt-20 border-4 border-white shadow-lg">
+                    <p class="text-gray-600 italic mt-6">"An amazing teacher who is patient, knowledgeable, and truly cares about her students' progress. My voice has never been stronger or healthier."</p>
+                    <p class="mt-4 font-bold text-purple-800 text-lg">- Achen E.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-playfair font-bold text-gray-800">From Our Blog</h2>
+                <p class="mt-3 text-lg text-gray-600">Tips, stories, and insights on vocal health and performance.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- Blog Post 1 -->
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/F3E8FF/3730A3?text=Inspire" alt="Inspirational image of musical notes" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-playfair font-bold text-gray-800">Finding Your True Voice: More Than Just Notes</h3>
+                        <p class="mt-3 text-gray-600">Singing isn't just about hitting the right notes. It's about conveying emotion, telling a story, and connecting with your authentic self. Discover how we can unlock that power together.</p>
+                        <a href="#" class="inline-block mt-4 text-purple-600 font-semibold hover:text-purple-800 transition">Read More &rarr;</a>
+                    </div>
+                </div>
+                <!-- Blog Post 2 -->
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/E9D5FF/3730A3?text=Heal" alt="Calm image representing healing" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-playfair font-bold text-gray-800">The Power of a Single Song: How Music Heals</h3>
+                        <p class="mt-3 text-gray-600">Music has a profound ability to soothe, energize, and heal. I share a story about a student who found confidence and overcame anxiety through the simple act of singing.</p>
+                        <a href="#" class="inline-block mt-4 text-purple-600 font-semibold hover:text-purple-800 transition">Read More &rarr;</a>
+                    </div>
+                </div>
+                <!-- Blog Post 3 -->
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/DDD6FE/3730A3?text=Learn" alt="Image representing teaching and learning" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-playfair font-bold text-gray-800">Lessons from a Student: What Teaching Teaches Me</h3>
+                        <p class="mt-3 text-gray-600">My greatest inspiration comes from my students. Each lesson is a two-way street, a shared journey where we both discover something new about music and ourselves.</p>
+                        <a href="#" class="inline-block mt-4 text-purple-600 font-semibold hover:text-purple-800 transition">Read More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-purple-50/60">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-4xl font-playfair font-bold text-gray-800">Ready to Find Your Voice?</h2>
+                <p class="mt-3 text-lg text-gray-600 mb-8">Reach out to schedule your first lesson or ask any questions you might have. I'm excited to hear from you!</p>
+                <form action="#" method="POST" class="space-y-6 text-left">
+                    <input type="text" placeholder="Your Name" class="w-full p-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-purple-400 focus:outline-none transition">
+                    <input type="email" placeholder="Your Email" class="w-full p-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-purple-400 focus:outline-none transition">
+                    <textarea placeholder="Your Message" rows="5" class="w-full p-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-purple-400 focus:outline-none transition"></textarea>
+                    <div class="text-center">
+                        <button type="submit" class="bg-purple-600 text-white font-bold text-lg px-10 py-3 rounded-full shadow-lg hover:bg-purple-700 transform hover:scale-105 transition-all duration-300 ease-in-out">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-4 py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-xl font-playfair font-bold">Vocal Harmony Studio</h3>
+                    <p class="text-gray-400 text-sm">Empowering singers since 2008.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition">Home</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">My Story</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">Blog</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">Contact</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-500 text-sm">
+                &copy; 2024 Vocal Harmony Studio. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>
